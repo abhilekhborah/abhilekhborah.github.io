@@ -1,0 +1,20 @@
+- company_name: Indian Institute of Technology, Guwahati
+  company_logo: images.png
+  position: <b>Summer Research Intern</b>
+  start_date: 15/05/2024
+  end_date: 10/07/2024
+  description: Worked under the guidance of Prof. Debanga Raj Neog to develop a Continuous Sign Language Recognition and Translation Framework that interprets gloss from sign language videos and converts it into spoken sentences. This two-part system includes a Video-to-Gloss model using CNN and Bi-LSTM for spatiotemporal feature extraction and sequence modeling, and a Gloss-to-Text Retrieval System utilizing Transformer architectures for natural language understanding and generation. Additionally, it features an emotion model based on valence-arousal theory, employing multimodal sentiment analysis to analyze and classify the emotional content in the sign language video. The framework also includes a TTS synthesis module based on WaveNet and Tacotron models to generate the translated text as audio.
+
+- company_name: Indian Institute of Information Technology, Allahabad
+  company_logo: IIIT-Allahabad.png
+  position: <b>Research Intern</b>
+  start_date: 27/01/2024
+  end_date: 18/07/2021
+  description: Worked under the guidance of Prof. Anupam Agrawal to develop a Deep Learning framework for understanding and analyzing crowd behaviors in video footage, focusing on the detection of anomalies and unusual events. The framework utilizes Computer Vision concepts such as LSTM, ConvNets, and MIL to develop a deep anomaly classification model that categorizes video segments into eight distinct real-life crimes.
+
+- company_name: Indian Institute of Science Education and Research, Kolkata
+  company_logo: 10001.png
+  position: <b>Research Intern</b>
+  start_date: 20/10/2023
+  end_date: 30/06/2024
+  description: Worked under the guidance of Prof. Kripabandhu Ghosh to develop a novel Ayurveda Retrieval Framework that inputs patient-like representations, correlates them with medical representations, and predicts the correct Ayurvedic disease based on Ayurvedic symptoms (Doshas, Dhatus, Srotas). The framework utilizes a curated dataset sourced from Ayurvedic institute doctors, ensuring its novelty.  Our approach has demonstrated remarkable effectiveness, achieving a score 77.01 percent higher than vanilla large language models. Specifically, the framework uses Gemini Pro as its core component, while integrating RAG to augment its capabilities with domain-specific Ayurvedic knowledge. This combination allows for more accurate and contextually relevant predictions of Ayurvedic diseases based on patient representations.

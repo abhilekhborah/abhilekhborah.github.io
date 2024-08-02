@@ -1,0 +1,18 @@
+- name: Abhilekh Borah
+  photo: cropped_image.png
+  info: Abhilekh Borah, CS Undergrad, Manipal University Jaipur
+  email: abhilekh.229301149@muj.manipal.edu
+  github: https://github.com/ethedeltae
+  researchgate: https://www.researchgate.net/
+  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
+  linkedin: https://www.linkedin.com/in/abhilekh-borah-aa758a15a/
+  cv: cv/Abhilekh CV - (2.0).pdf
+  # Change the items in "education" you have (up to 6)
+  education:
+    [
+      "(2022-2026) Bachelor of Technology in Computer Science and Engineering, Manipal University Jaipur",
+      "(2020-2022) High School Diploma, Delhi Public School, Numaligarh",
+    ]
+
+  educationshort:
+    ["(2022-2026) B.Tech. CSE, Manipal University Jaipur", "(2022) HS Diploma, DPS Numaligarh"]
