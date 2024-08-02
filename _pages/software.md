@@ -42,7 +42,7 @@ iframe {
 <h4><b>AcharyaGPT</b></h4><br/>
 <img src="Screen.jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
 <a href="https://youtu.be/98QBgZP21Jo" target="_blank"><button class="btn btn-success btn-sm">Demo</button></a>
-<a href="https://github.com/ethedeltae/AcharyaGPT-iOS.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+<a href="https://github.com/abhilekhborah/AcharyaGPT-iOS.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
 
 
 
@@ -61,7 +61,7 @@ A user-friendly chatbot app powered by OpenAI's fine-tuned GPT-3.5 Turbo, design
 <h4><b>GyanSrota</b></h4><br/>
 <img src="3.jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
 <a href="https://youtu.be/1yG1GuNItuM" target="_blank"><button class="btn btn-success btn-sm">Demo</button></a>
-<a href="https://github.com/ethedeltae/GyanSrota.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+<a href="https://github.com/abhilekhborah/GyanSrota.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
 
 
 
@@ -79,7 +79,7 @@ GyanSrota is a web-based chatbot application designed to provide comprehensive a
 <h4><b>AR Model Placer</b></h4><br/>
 <img src="ar model placer (3).jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
 <a href="https://youtu.be/dDYtAQe9Upk" target="_blank"><button class="btn btn-success btn-sm">Demo</button></a>
-<a href="https://github.com/ethedeltae/AR-Model-Placer-App.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+<a href="https://github.com/abhilekhborah/AR-Model-Placer-App.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
 
 
 
@@ -97,7 +97,7 @@ AR Model Placer is an augmented reality iOS application that allows users to pla
 <h4><b>Crowd Anomaly Detection</b></h4><br/>
 <img src="Your paragraph text (1).jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
 <a href="https://youtu.be/Mco6q5Ct3oQ" target="_blank"><button class="btn btn-success btn-sm">Demo</button></a>
-<a href="https://github.com/ethedeltae/Crowd-Anomaly-Detection.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+<a href="https://github.com/abhilekhborah/Crowd-Anomaly-Detection.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
 
 
 
@@ -114,7 +114,7 @@ This crowd behavior analysis framework is designed to detect and classify anomal
 <div class="col-md-12 col-sm-12">
 <h4><b>Movie Recommender System</b></h4><br/>
 <img src="Movie Recommender System (1).jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
-<a href="https://github.com/ethedeltae/MovieRecommenderSystem.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+<a href="https://github.com/abhilekhborah/MovieRecommenderSystem.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
 
 
 
@@ -144,7 +144,7 @@ The movie recommender system, trained on the IMDb 5000 movie dataset, employs a 
 </style>
 <span class="text-wrapper">
   ... more projects on 
-  <a href="https://github.com/ethedeltae" class="github-link">Github</a>
+  <a href="https://github.com/abhilekhborah" class="github-link">Github</a>
 </span>
 
 
