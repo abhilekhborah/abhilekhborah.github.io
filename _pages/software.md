@@ -112,6 +112,25 @@ This crowd behavior analysis framework is designed to detect and classify anomal
 <div class="jumbotron">
 <div class="row align-items-end">
 <div class="col-md-12 col-sm-12">
+<h4><b>Multimodal Retrieval Framework</b></h4><br/>
+<img src="Multimodal Retrieval Framework (3).jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
+<a href="https://github.com/abhilekhborah/Multimodal-Query-Engine" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
+
+
+
+
+
+
+A multimodal Retrieval-Augmented Generation framework that incorporates Gemini Pro 1.5 for large language model processing, enabling multiple modalities such as image-to-text, text-to-image, and simultaneous text and image generation. It has integrated YOLO framework for object detection and OCR methods for accurate text extraction from PDFs and diverse image data. The framework enables efficient data retrieval and analysis, facilitating user interaction across complex datasets in information retrieval.
+
+</div>
+</div>
+</div>
+
+
+<div class="jumbotron">
+<div class="row align-items-end">
+<div class="col-md-12 col-sm-12">
 <h4><b>Movie Recommender System</b></h4><br/>
 <img src="Movie Recommender System (1).jpg" alt="Description of Image" class="img-fluid rounded" style="width: 370px; height: 250px"><br/><br/>
 <a href="https://github.com/abhilekhborah/MovieRecommenderSystem.git" target="_blank"><button class="btn btn-info btn-sm">Github</button></a>
@@ -121,7 +140,7 @@ This crowd behavior analysis framework is designed to detect and classify anomal
 
 
 
-The movie recommender system, trained on the IMDb 5000 movie dataset, employs a content-based approach for generating recommendations. It processes movie details such as genres, keywords, and cast, merging them into a unified text description for each movie. NLP libraries such as NLTK are used for tokenization, stemming, and stopword removal to prepare the text data. The system then employs the TF-IDF vectorizer from scikit-learn to convert these textual descriptions into numerical feature vectors. By caalculating cosine similarity between these vectors, the system identifies and recommends movies with the highest similarity to a user's selected movie, ensuring relevant suggestions.
+The movie recommender system, trained on the IMDb 5000 movie dataset, employs a content-based approach for generating recommendations. It processes movie details such as genres, keywords, and cast, merging them into a unified text description for each movie. NLP libraries such as NLTK are used for tokenization, stemming, and stopword removal to prepare the text data. The system then employs the TF-IDF vectorizer from scikit-learn to convert these textual descriptions into numerical feature vectors. By calculating cosine similarity between these vectors, the system identifies and recommends movies with the highest similarity to a user's selected movie, ensuring relevant suggestions.
 
 </div>
 </div>
@@ -130,21 +149,21 @@ The movie recommender system, trained on the IMDb 5000 movie dataset, employs a 
 <style>
   .text-wrapper {
     color: white;
-    font-weight: bold;
     font-size: large;
     padding-left: 5px;
   }
   .github-link {
-    color: #0066cc;
-    text-decoration: underline;
+    color: dark-green;
+    text-decoration: none;
   }
   .github-link:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 </style>
 <span class="text-wrapper">
   ... more projects on 
   <a href="https://github.com/abhilekhborah" class="github-link">Github</a>
 </span>
+
 
 
