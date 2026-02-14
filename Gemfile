@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.7"
-gem "minimal-mistakes-jekyll"
+# GitHub Pages-compatible setup for Minimal Mistakes (remote theme)
+gem "github-pages", group: :jekyll_plugins
 gem "kramdown"
 gem "kramdown-parser-gfm"
