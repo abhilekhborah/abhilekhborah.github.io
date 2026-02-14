@@ -1,4 +1,329 @@
----
-layout: home
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhilekh Borah</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome (X logo) + Academicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+                         "Helvetica Neue", Arial, sans-serif;
+            background-color: #ffffff;
+            color: #5a5a5a;
+            line-height: 1.6;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background-color: #ffffff;
+            padding: 1.25rem 2rem;
+            border-bottom: 1px solid #ebebeb;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        header h1.site-title {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 500;
+            color: #111827;
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #5a5a5a;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* ================= MAIN ================= */
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        /* ================= INTRO ================= */
+.intro {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+        .intro-image img {
+            width: 180px;
+            height: 180px;
+            border-radius: 9999px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* ---------- SOCIAL ICONS (MATCH IMAGE) ---------- */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;     /* ← prevents vertical drop */
+    gap: 0px;
+    margin-top: 0.6rem;
+    flex-wrap: nowrap;       /* ← prevents wrapping */
+}
+
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 6px;
+            font-size: 26px;
+            text-decoration: none;
+        }
+    
+        .icon-mail { color: #000000; }
+        .icon-x { color: #000000; }
+        .icon-scholar { color: #4285F4; } /* Google Scholar blue */
+        .icon-cv { color: #000000; }
+
+        /* ------------------------------------------------ */
+
+        .intro-text h2 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            font-weight: 500;
+            color: #111827;
+        }
+
+        .intro-text h2 .first-name {
+            font-weight: 700;
+        }
+
+        .intro-text h2 .last-name {
+            font-weight: 300;
+            margin-left: 0.25rem;
+        }
+
+        .tagline {
+            font-size: 0.95rem;
+            color: #7a8288;
+            /* font-style: italic; */
+            margin-bottom: 0.5rem;
+            margin-top: -0.5rem;
+        }
+
+        .intro-text hr {
+            border: none;
+            border-top: 1px solid #e5e7eb;
+            margin: 0.75rem 0 1rem;
+        }
+
+        .intro-text p {
+            font-size: 1rem;
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 0.75rem;
+        }
+
+        .section h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: #111827;
+        }
+        .section h3 {
+    font-size: 1.45rem;   /* slightly bigger */
+    font-weight: 600;     /* a touch more weight */
+}
+
+.section p {
+    font-size: 1.05rem;   /* gentle bump */
+    font-weight: 500;     /* slightly stronger than body */
+}
+
+.intro-text {
+  margin-top: 0 !important;
+  flex: 1;
+}
+
+.intro-text h2 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.intro-text hr {
+  margin-top: 0.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.intro-image {
+  flex-shrink: 0;
+}
+.intro-image {
+    flex: 0 0 180px;        /* fixed column width */
+    overflow: visible !important;
+}
+.pikachu-gif {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    display: block;
+    /* margin: 0.5rem auto 0; */
+    /* max-width: 150px; */
+    width: 50px; 
+    /* height: auto; */
+}
+.pikachu-gif {
+    transform: translateX(-20px);
+}
+
+    </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <h1 class="site-title">Abhilekh Borah</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./beyond-research.html">Beyond Research</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="intro">
+    <div class="intro-image">
+        <img src="./assets/profile-pic.png" alt="Abhilekh Borah">
+
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/abhilekh-borah-aa758a15a/" class="icon-linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="mailto:abhilekhxborah@gmail.com" class="icon-mail">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://scholar.google.com/citations?user=iZG9MEMAAAAJ&hl=en" class="icon-scholar">
+        <i class="ai ai-google-scholar-square"></i>
+    </a>
+    <a href="https://x.com/BorahAbhilekh" class="icon-x">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://drive.google.com/file/d/1Gq3Ti39ONDxJm9b64c56pH7_cZEuJygr/view?usp=sharing" class="icon-cv">
+        <i class="ai ai-cv-square"></i>
+    </a>
+</div>
+<img src="./assets/pikachu-wave.gif"
+     alt="Pokemon Pikachu"
+     class="pikachu-gif">
+
+    </div>
+
+    <div class="intro-text">
+        <h2>
+            <span class="first-name">Abhilekh</span>
+            <span class="last-name">Borah</span>
+            <span class="first-name"> / অভিলেখ</span>
+            <span class="last-name"> বৰা</span>
+        </h2>
+
+        <p class="tagline">making llms more human 🌻</p>
+
+        <hr>
+
+<p>
+<strong>Update:</strong> I will be joining <strong>Microsoft Research, India</strong> as a Research Intern this Spring (March 2026).
+<br>
+<br>
+Hey! I'm <strong>Abhilekh Borah</strong>, a final-year CS undergraduate at
+Manipal University Jaipur, India. My prime interest lies in AI Alignment,
+exploring how <strong>large language and vision models</strong> can operate
+<strong>safely</strong>, <strong>ethically</strong> and <strong>responsibly</strong> that reflect
+<strong>human values, behavior,</strong> and <strong>user intent</strong>,
+contributing to more <strong>equitable, trustworthy,</strong> and <strong>fair</strong> systems.
+</p>
+
+
+<p>
+I have first-authored <strong>8+</strong> research papers at top-tier core CS conferences such as
+<strong>ICLR, ACL, EMNLP, AAAI</strong>, and <strong>EACL</strong>. In addition, I have conducted
+research across both academia and industry through <strong>6+</strong> internships at organizations such as <strong>Adobe (<a href="https://adobe.mdsr.live/">Media & Data Science Research Lab</a>)</strong>, and the
+<strong>National University of Singapore (<a href="https://ctic.nus.edu.sg/">Centre for Trusted Internet Community</a>)</strong>.
+</p>
+<p>
+Please check out <a href="./publications.html">publications</a> for more details about my work.
+If you’re interested in discussing research or exploring collaborations, feel free to reach out at
+<a href="mailto:abhilekhxborah@gmail.com">abhilekhxborah@gmail.com</a>.
+</p>
+    </div>
+</section>
+
+<section class="section">
+    <h3>News 🔥 </h3>
+    <p>🎉 <a href="https://arxiv.org/abs/2508.07321">ObfusQAte</a> has been accepted at <strong>LREC 2026</strong>!</p>
+    <p>🎉 <a href="https://behavior-in-the-wild.github.io/social-agents.html">Social Agents</a> has been accepted at <strong>ICLR 2026</strong>!</p>
+<p>
+🎉 <a href="https://arxiv.org/abs/2602.01132">Don't Judge a Book by its Cover</a> has been selected for an
+<strong>Oral</strong> presentation at <strong>EACL 2026</strong>!
+</p>
+<p>
+🇸🇬 Presented two of our papers, <a href="https://detonate-t2i.github.io/">DETONATE (Oral)</a> and 
+<a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link">Always Refuse</a>, at <strong>AAAI 2026</strong> in Singapore.
+</p>
+<p>
+🇮🇳 Presented our paper, <a href="https://aclanthology.org/2025.ijcnlp-long.100/">The Visual Counter Turing Test</a>, at <strong>IJCNLP-AACL 2025</strong> in Mumbai, India.
+</p>
+<p>
+🇨🇳 Presented two of our papers, <a href="https://aclanthology.org/2025.emnlp-main.145/">Alignment Quality Index (Oral)</a> and 
+<a href="https://aclanthology.org/2025.emnlp-main.68/">DRISHIKON</a>, at <strong>EMNLP 2025</strong> in Suzhou, China.
+</p>
+<p>
+🏆 <a href="https://aclanthology.org/2025.nlp4pi-1.4/">CliME</a> has been awarded the 
+<a href="https://www.linkedin.com/posts/abhilekh-borah-aa758a15a_acl2025-climatechange-responsibleai-activity-7357017258029674496--rmn?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYsLZ8BdrVGbxX4NFz9Db2ZNayVStyBJNE">Outstanding Paper Award</a> 
+at <strong>ACL 2025</strong>, NLP for Positive Impact Workshop, in Vienna, Austria 🇦🇹.
+</p>
+
+
+
+
+
+
+</section>
+
+</main>
+
+</body>
+</html>

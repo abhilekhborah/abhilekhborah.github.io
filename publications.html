@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publications - Abhilekh Borah</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Font Awesome + Academicons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+                 "Helvetica Neue", Arial, sans-serif;
+    background-color: #ffffff;
+    color: #5a5a5a;
+    line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: #ffffff;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid #ebebeb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+header h1.site-title {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 500;
+    color: #111827;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: #5a5a5a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* ================= MAIN ================= */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+h2.page-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111827;
+}
+
+.equal-note {
+    font-size: 1rem;
+    color: #7a8288;
+    margin-bottom: 1rem;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 2rem;
+}
+
+/* ================= PUBLICATION CARD ================= */
+
+.publication {
+    display: flex;
+    flex-direction: column;   /* STACK EVERYTHING */
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease;
+}
+.publication:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.publication-image {
+    width: 100%;
+}
+
+.publication-image img {
+    width: 100%;
+    height: auto;             /* prevents cropping */
+    object-fit: contain;      /* always show full image */
+    border-radius: 6px;
+}
+
+.publication-content {
+    flex: 1;
+}
+
+.publication-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #111827;
+}
+
+.publication-authors {
+    font-size: 1rem;
+    color: #111827;
+    margin-bottom: 0.4rem;
+}
+
+.publication-venue {
+    font-size: 1rem;
+    color:#111827;
+    margin-bottom: 1rem;
+}
+
+.publication-links {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+/* ================= BUTTON STYLE ================= */
+
+.pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: white !important;
+    transition: opacity 0.2s ease;
+}
+
+.pub-link:hover {
+    opacity: 0.9;
+    color: white !important;
+    text-decoration: none;
+}
+
+.pub-link-pdf { background-color: #d33f3f; }
+.pub-link-code { background-color: #515cc3; }
+.pub-link-project { background-color: #59af58; }
+.pub-link-dataset { background-color: #a160bb; }
+
+/* Prevent global link hover affecting buttons */
+a:not(.pub-link):hover {
+    text-decoration: underline;
+}
+
+/* ================= AWARD BADGES ================= */
+.award-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background-color: #fff0ba;          /* light gold base */
+    color: #0b0900;                     /* deep gold text */
+    padding: 0.3rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+
+    border: 1px solid #f3d785;          /* gold rim */
+    
+    /* subtle shine effect */
+     /* soft outer glow */
+}
+
+
+.oral-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #333;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 0 1rem;
+    }
+
+    .header-container {
+        gap: 1rem;
+    }
+
+    nav {
+        gap: 1rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-container">
+    <h1 class="site-title">Abhilekh Borah</h1>
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./publications.html">Publications</a>
+      <a href="./beyond-research.html">Beyond Research</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+    <h2 class="page-title">Publications</h2>
+    <div class="equal-note">" * " <i>denotes </i><u>Equal Contribution</u></div>
+    <hr class="section-divider">
+
+    <!-- Social Agents -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/social-agents.jpg" alt="Social Agents Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                Social Agents: Collective Intelligence Improves LLM Predictions
+            </div>
+
+            <div class="publication-authors">
+                Aanisha Bhattacharyya*, <u>Abhilekh Borah*</u>, 
+                Yaman Kumar Singla*, Rajiv Ratn Shah, 
+                Changyou Chen, Balaji Krishnamurthy
+            </div>
+
+            <div class="publication-venue">
+                The Fourteenth International Conference on Learning Representations (ICLR 2026)
+            </div>
+
+            <div class="publication-links">
+                <a href="https://openreview.net/forum?id=73J3hsato3&referrer=%5BAuthor+Console%5D(/group?id=ICLR.cc/2026/Conference/Authors#your-submissions)" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+                <a href="https://behavior-in-the-wild.github.io/social-agents.html" class="pub-link pub-link-project">
+                    <i class="fa-solid fa-globe"></i> Project Page
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Don't Judge a Book by its Cover -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/logiqate.png" alt="Logifus Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                Don't Judge a Book by its Cover: Testing LLMs' Robustness Under Logical Obfuscation
+            </div>
+
+            <div class="publication-authors">
+                <u>Abhilekh Borah</u>, Shubhra Ghosh*, Kedar Joshi*, 
+                Aditya Kumar Guru*, Kripabandhu Ghosh
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2026)
+                <span class="oral-badge">ORAL</span>
+            </div>
+
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2602.01132" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+             <a href="https://github.com/abhilekhborah/logical-obfuscation" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+                <a href="https://huggingface.co/datasets/abhilekhborah/LogiQAte" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset
+</a>
+            </div>
+        </div>
+    </div>
+        <!-- ObfusQAte -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/obfusqate.png" alt="ObfusQAte Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                ObfusQAte: A Proposed Framework to Evaluate LLM Robustness on Obfuscated Factual Question Answering
+            </div>
+
+            <div class="publication-authors">
+                Shubhra Ghosh*, <u>Abhilekh Borah</u>*, 
+                Aditya Kumar Guru*, Kripabandhu Ghosh
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the 15th International Conference on Language Resources and Evaluation (LREC 2026)
+            </div>
+
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2508.07321" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+                <a href="https://github.com/DeityAG/ObfusQAte" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DETONATE -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/detonate.png" alt="DETONATE Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                DETONATE - A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization
+            </div>
+
+            <div class="publication-authors">
+                Renjith Prasad*, <u>Abhilekh Borah</u>*, 
+                Hasnat Md Abdullah*, Chathurangi Shyalika, 
+                Gurpreet Singh, Ritvik Garimella, Rajarshi Roy, 
+                Harshul Surana, Nasrin Imanpour, Suranjana Trivedy, 
+                Amit Sheth, Amitava Das
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2026, AI Alignment Track)
+                <span class="oral-badge">ORAL</span>
+            </div>
+
+            <div class="publication-links">
+                <a href="https://arxiv.org/abs/2506.14903" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+                <a href="https://detonate-t2i.github.io/" class="pub-link pub-link-project">
+                    <i class="fa-solid fa-globe"></i> Project Page
+                </a>
+                             <a href="https://github.com/abhilekhborah/Detonate" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Always Refuse -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/alwaysrefuse.png" alt="Always Refuse Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                Always Refuse: Steering LLMs Against Jailbreaks with Contrastive Activations
+            </div>
+
+            <div class="publication-authors">
+                <u>Abhilekh Borah</u>, Niranjan Chebrolu, Kokil Jaidka
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2026, Student Abstract & Poster Program)
+            </div>
+
+            <div class="publication-links">
+                <a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+                             <a href="https://github.com/abhilekhborah/Always-Refuse" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Visual Counter Turing Test (VCT2) -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/vct.png" alt="VCT2 Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+The Visual Counter Turing Test (VCT<sup>2</sup>): 
+A Benchmark for Evaluating AI-Generated Image Detection 
+and the Visual AI Index (V<sub>AI</sub>)
+            </div>
+
+            <div class="publication-authors">
+                Nasrin Imanpour*, <u>Abhilekh Borah</u>*, 
+                Shashwat Bajpai*, Subhankar Ghosh*, 
+                Sainath Reddy Sankepally*, Hasnat Md Abdullah, 
+                Nishoak Kosaraju, Shreyas Dixit, Ashhar Aziz, 
+                Shwetangshu Biswas, Vinija Jain, Aman Chadha, 
+                Song Wang, Amit Sheth, Amitava Das
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the 14th International Joint Conference on Natural Language Processing and the 4th Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL 2025)
+            </div>
+
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2025.ijcnlp-long.100/" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+
+                             <a href="https://github.com/nasrinimapour/VCT2" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+                <a href="https://huggingface.co/datasets/anonymous1233/COCO_AII" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset (COCO)
+</a>
+                <a href="https://huggingface.co/datasets/anonymous1233/twitter_AII" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset (Twitter)
+</a>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alignment Quality Index (AQI) -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/aqi.png" alt="AQI Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                Alignment Quality Index (AQI) - Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations
+            </div>
+
+            <div class="publication-authors">
+                <u>Abhilekh Borah*</u>, Chhavi Sharma*, Danush Khanna*, 
+                Utkarsh Bhatt, Gurpreet Singh, Hasnat Md Abdullah, 
+                Raghav Kaushik Ravi, Vinija Jain, Shubham Singh, 
+                Vasu Sharma, Arpita Vats, Rahul Raja, Aman Chadha, 
+                Amitava Das
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025)
+                <span class="oral-badge">ORAL</span>
+            </div>
+
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2025.emnlp-main.145/" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+                <a href="https://github.com/heychhavi/aqi-eval/" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+                                <a href="https://huggingface.co/datasets/hasnat79/litmus" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset (LITMUS)
+</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- DRISHTIKON -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/drishtikon.png" alt="DRISHTIKON Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                DRISHTIKON: A Multimodal Multilingual Benchmark for Testing Language Models' Understanding on Indian Culture
+            </div>
+
+            <div class="publication-authors">
+                Arijit Maji, Raghvendra Kumar, Akash Ghosh, 
+                Anushka, Nemil Shah, <u>Abhilekh Borah</u>, 
+                Vanshika Shah, Nishant Mishra, Sriparna Saha
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (EMNLP 2025)
+            </div>
+
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2025.emnlp-main.68/" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+                <a href="https://github.com/13ari/DRISHTIKON" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+
+                                <a href="https://huggingface.co/datasets/13ari/DRISHTIKON" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset
+</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CliME -->
+    <div class="publication">
+        <div class="publication-image">
+            <img src="./assets/clime.png" alt="CliME Paper">
+        </div>
+
+        <div class="publication-content">
+            <div class="publication-title">
+                CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient (CAQ)
+            </div>
+
+            <div class="publication-authors">
+                <u>Abhilekh Borah</u>*, Hasnat Md Abdullah*, 
+                Kangda Wei, Ruihong Huang
+            </div>
+
+            <div class="publication-venue">
+                Proceedings of the Fourth Workshop on NLP for Positive Impact (NLP4PI) at ACL 2025
+                <span class="award-badge">
+    <i class="fa-solid fa-trophy"></i>
+    Outstanding Paper Award
+</span>
+            </div>
+
+            <div class="publication-links">
+                <a href="https://aclanthology.org/2025.nlp4pi-1.4/" class="pub-link pub-link-pdf">
+                    <i class="fa-solid fa-file-pdf"></i> Paper
+                </a>
+                <a href="https://github.com/abhilekhborah/CliME" class="pub-link pub-link-code">
+    <i class="fa-brands fa-github"></i> Code
+</a>
+
+                                <a href="https://huggingface.co/datasets/climedataset/CliME" class="pub-link pub-link-dataset">
+    <i class="fa-solid fa-database"></i> Dataset
+</a>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>
