@@ -90,3 +90,41 @@ for (const button of document.querySelectorAll('[data-copy-email]')) {
   });
 }
 
+
+const navigation = document.querySelector('.navigation');
+const navItems = [...navigation.querySelectorAll('a[href^="#"]')]
+  .map((link) => ({ link, section: document.getElementById(link.getAttribute('href').slice(1)) }))
+  .filter((item) => item.section);
+let activeNavLink = null;
+let navFrame = 0;
+
+function updateActiveNav() {
+  navFrame = 0;
+  const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+  const line = offset + 24;
+  let current = null;
+  for (const item of navItems) {
+    if (item.section.getBoundingClientRect().top <= line) current = item.link;
+  }
+  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+  if (atBottom) current = navItems[navItems.length - 1].link;
+  if (current === activeNavLink) return;
+  activeNavLink = current;
+  for (const { link } of navItems) {
+    const isActive = link === current;
+    link.classList.toggle('is-active', isActive);
+    if (isActive) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  }
+  if (current && navigation.scrollWidth > navigation.clientWidth) {
+    navigation.scrollTo({ left: current.offsetLeft - (navigation.clientWidth - current.offsetWidth) / 2, behavior: 'smooth' });
+  }
+}
+
+function requestNavUpdate() {
+  if (!navFrame) navFrame = requestAnimationFrame(updateActiveNav);
+}
+
+window.addEventListener('scroll', requestNavUpdate, { passive: true });
+window.addEventListener('resize', requestNavUpdate);
+updateActiveNav();
