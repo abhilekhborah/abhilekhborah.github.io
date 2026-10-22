@@ -130,11 +130,18 @@ function requestNavUpdate() {
 
 document.addEventListener('click', (event) => {
   const anchor = event.target.closest('a[href^="#"]');
-  const item = anchor && navItems.find((entry) => entry.link.getAttribute('href') === anchor.getAttribute('href'));
-  if (item) {
-    lockedNavLink = item.link;
-    requestNavUpdate();
-  }
+  if (!anchor) return;
+  const target = document.getElementById(anchor.getAttribute('href').slice(1));
+  if (!target) return;
+  event.preventDefault();
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
+  target.focus({ preventScroll: true });
+  const item = navItems.find((entry) => entry.section === target);
+  lockedNavLink = item ? item.link : null;
+  requestNavUpdate();
 });
 
 for (const type of ['wheel', 'touchmove', 'keydown']) {

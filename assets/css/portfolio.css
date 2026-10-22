@@ -226,6 +226,7 @@ mark.highlight {
 .profile-companion:focus-within .pikachu-greeting { visibility: visible; opacity: 1; }
 main { min-width: 0; }
 section { margin-bottom: 36px; scroll-margin-top: 0; }
+section[tabindex="-1"]:focus { outline: none; }
 h2 {
   margin: 0 0 18px;
   padding-bottom: 10px;
