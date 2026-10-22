@@ -96,18 +96,21 @@ const navItems = [...navigation.querySelectorAll('a[href^="#"]')]
   .map((link) => ({ link, section: document.getElementById(link.getAttribute('href').slice(1)) }))
   .filter((item) => item.section);
 let activeNavLink = null;
+let lockedNavLink = null;
 let navFrame = 0;
 
 function updateActiveNav() {
   navFrame = 0;
   const offset = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
-  const line = offset + 24;
+  const base = offset + 120;
+  const remaining = document.documentElement.scrollHeight - window.innerHeight - window.scrollY;
+  const progress = Math.min(1, Math.max(0, 1 - remaining / window.innerHeight));
+  const line = base + (window.innerHeight - base) * progress;
   let current = null;
   for (const item of navItems) {
     if (item.section.getBoundingClientRect().top <= line) current = item.link;
   }
-  const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
-  if (atBottom) current = navItems[navItems.length - 1].link;
+  if (lockedNavLink) current = lockedNavLink;
   if (current === activeNavLink) return;
   activeNavLink = current;
   for (const { link } of navItems) {
@@ -123,6 +126,23 @@ function updateActiveNav() {
 
 function requestNavUpdate() {
   if (!navFrame) navFrame = requestAnimationFrame(updateActiveNav);
+}
+
+document.addEventListener('click', (event) => {
+  const anchor = event.target.closest('a[href^="#"]');
+  const item = anchor && navItems.find((entry) => entry.link.getAttribute('href') === anchor.getAttribute('href'));
+  if (item) {
+    lockedNavLink = item.link;
+    requestNavUpdate();
+  }
+});
+
+for (const type of ['wheel', 'touchmove', 'keydown']) {
+  window.addEventListener(type, () => {
+    if (!lockedNavLink) return;
+    lockedNavLink = null;
+    requestNavUpdate();
+  }, { passive: true });
 }
 
 window.addEventListener('scroll', requestNavUpdate, { passive: true });
