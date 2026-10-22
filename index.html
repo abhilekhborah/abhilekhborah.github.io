@@ -1,328 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhilekh Borah</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Font Awesome (X logo) + Academicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
-                         "Helvetica Neue", Arial, sans-serif;
-            background-color: #ffffff;
-            color: #5a5a5a;
-            line-height: 1.6;
-        }
-
-        /* ================= HEADER ================= */
-
-        header {
-            background-color: #ffffff;
-            padding: 1.25rem 2rem;
-            border-bottom: 1px solid #ebebeb;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            max-width: 900px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        header h1.site-title {
-            font-size: 1.2rem;
-            margin: 0;
-            font-weight: 500;
-            color: #111827;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: #5a5a5a;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-        }
-
-        /* ================= MAIN ================= */
-
-        main {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-
-        /* ================= INTRO ================= */
-.intro {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-
-        .intro-image img {
-            width: 180px;
-            height: 180px;
-            border-radius: 9999px;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* ---------- SOCIAL ICONS (MATCH IMAGE) ---------- */
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;     /* ← prevents vertical drop */
-    gap: 0px;
-    margin-top: 0.6rem;
-    flex-wrap: nowrap;       /* ← prevents wrapping */
-}
-
-
-        .social-links a {
-            display: inline-block;
-            margin: 0 6px;
-            font-size: 26px;
-            text-decoration: none;
-        }
-    
-        .icon-mail { color: #000000; }
-        .icon-x { color: #000000; }
-        .icon-scholar { color: #4285F4; } /* Google Scholar blue */
-        .icon-cv { color: #000000; }
-
-        /* ------------------------------------------------ */
-
-        .intro-text h2 {
-            font-size: 1.6rem;
-            margin-bottom: 0.75rem;
-            font-weight: 500;
-            color: #111827;
-        }
-
-        .intro-text h2 .first-name {
-            font-weight: 700;
-        }
-
-        .intro-text h2 .last-name {
-            font-weight: 300;
-            margin-left: 0.25rem;
-        }
-
-        .tagline {
-            font-size: 0.95rem;
-            color: #7a8288;
-            /* font-style: italic; */
-            margin-bottom: 0.5rem;
-            margin-top: -0.5rem;
-        }
-
-        .intro-text hr {
-            border: none;
-            border-top: 1px solid #e5e7eb;
-            margin: 0.75rem 0 1rem;
-        }
-
-        .intro-text p {
-            font-size: 1rem;
-            color: #374151;
-            line-height: 1.7;
-            margin-bottom: 0.75rem;
-        }
-
-        .section h3 {
-            font-size: 1.3rem;
-            font-weight: 600;
-            margin-bottom: 1.25rem;
-            color: #111827;
-        }
-        .section h3 {
-    font-size: 1.45rem;   /* slightly bigger */
-    font-weight: 600;     /* a touch more weight */
-}
-
-.section p {
-    font-size: 1.05rem;   /* gentle bump */
-    font-weight: 500;     /* slightly stronger than body */
-}
-
-.intro-text {
-  margin-top: 0 !important;
-  flex: 1;
-}
-
-.intro-text h2 {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-.intro-text hr {
-  margin-top: 0.5rem !important;
-  margin-bottom: 1rem !important;
-}
-
-.intro-image {
-  flex-shrink: 0;
-}
-.intro-image {
-    flex: 0 0 180px;        /* fixed column width */
-    overflow: visible !important;
-}
-.pikachu-gif {
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    background: transparent !important;
-    display: block;
-    /* margin: 0.5rem auto 0; */
-    /* max-width: 150px; */
-    width: 50px; 
-    /* height: auto; */
-}
-.pikachu-gif {
-    transform: translateX(-20px);
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abhilekh Borah, Member of Technical Staff (ML) at Adobe. Research in AI alignment, language and vision models, and human-centered AI.">
+  <title>Abhilekh Borah - Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&amp;family=Press+Start+2P&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/portfolio.css">
+  <script src="./assets/js/portfolio.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#about-me">Skip to content</a>
+  <header class="profile-header">
+    <div class="profile">
+      <a class="portrait-link" href="#about-me" aria-label="About Abhilekh Borah">
+        <img class="portrait" src="./assets/profile-pic.png" alt="Abhilekh Borah" width="160" height="160">
+      </a>
+      <div class="profile-details">
+        <div class="identity-line">
+          <h1><strong>Abhilekh</strong> Borah <span class="native-name">/ <span lang="as"><strong>অভিলেখ</strong> বৰা</span></span></h1>
+          <p class="profile-role">Member of Technical Staff (ML) at <span class="adobe-brand"><img class="adobe-logo" src="./assets/adobe-logo.png" alt="Adobe" width="54" height="14"></span></p>
+        </div>
+        <p class="tagline">making AI more human 🌻</p>
+        <div class="profile-contact">
+          <ul class="profile-links">
+            <li class="email-row">
+              <a href="mailto:abhilekhxborah@gmail.com" aria-label="Email abhilekhxborah@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="email-address">abhilekhxborah@gmail.com</span></a>
+              <button class="copy-email" type="button" data-copy-email="abhilekhxborah@gmail.com" aria-label="Copy personal email address" title="Copy personal email address"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>
+            </li>
+            <li><a href="https://scholar.google.com/citations?user=iZG9MEMAAAAJ&amp;hl=en" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/abhilekh-borah-aa758a15a/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/abhilekhborah" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://x.com/BorahAbhilekh" aria-label="Twitter / X" title="Twitter / X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://drive.google.com/file/d/18KkK9YJxZsbWLtgd_KGbuFh2XoGhiRFG/view" aria-label="Curriculum Vitae" title="Curriculum Vitae" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines" aria-hidden="true"></i><span class="cv-label">CV</span></a></li>
+          </ul>
+        </div>
+        <span id="email-copy-status" class="visually-hidden" role="status" aria-live="polite"></span>
+      </div>
+      <div class="profile-companion">
+        <button class="pikachu-trigger" type="button" aria-label="Say hello to Pikachu" aria-describedby="pikachu-greeting">
+          <img class="pikachu-image" src="./assets/pikachu-wave.gif" alt="Waving Pikachu" width="140" height="160">
+        </button>
+        <span id="pikachu-greeting" class="pikachu-greeting" role="tooltip"><strong>Hi!</strong> Welcome to <br>Abhilekh's portfolio!</span>
+      </div>
+      <div class="header-sky" aria-hidden="true" hidden>
+        <svg class="sky-cloud sky-cloud-big" viewBox="-1 -1 26 14" shape-rendering="crispEdges" focusable="false"><path fill="#86c8f2" d="M10 0h5v1h-5zM8 1h2v1h-2zM15 1h2v1h-2zM7 2h1v1h-1zM17 2h1v1h-1zM5 3h3v1h-3zM17 3h3v1h-3zM4 4h1v1h-1zM20 4h1v1h-1zM3 5h1v1h-1zM21 5h1v1h-1zM2 6h1v1h-1zM22 6h1v1h-1zM2 7h1v1h-1zM22 7h1v1h-1zM2 8h1v1h-1zM22 8h1v1h-1zM2 9h1v1h-1zM22 9h1v1h-1zM3 10h1v1h-1zM22 10h1v1h-1zM4 11h18v1h-18z"/><path fill="#ffffff" d="M10 1h5v1h-5zM8 2h9v1h-9zM8 3h9v1h-9zM5 4h15v1h-15zM4 5h17v1h-17zM3 6h19v1h-19zM3 7h19v1h-19zM3 8h19v1h-19zM4 9h18v1h-18z"/><path fill="#dbeefb" d="M3 9h1v1h-1zM4 10h18v1h-18z"/></svg>
+        <svg class="sky-cloud sky-cloud-small" viewBox="-1 -1 17 10" shape-rendering="crispEdges" focusable="false"><path fill="#86c8f2" d="M7 -1h3v1h-3zM5 0h2v1h-2zM10 0h1v1h-1zM3 1h2v1h-2zM11 1h1v1h-1zM2 2h1v1h-1zM12 2h2v1h-2zM1 3h1v1h-1zM14 3h1v1h-1zM1 4h1v1h-1zM15 4h1v1h-1zM1 5h1v1h-1zM15 5h1v1h-1zM1 6h1v1h-1zM14 6h1v1h-1zM2 7h12v1h-12z"/><path fill="#ffffff" d="M7 0h3v1h-3zM5 1h6v1h-6zM3 2h9v1h-9zM2 3h12v1h-12zM2 4h13v1h-13zM2 5h12v1h-12z"/><path fill="#dbeefb" d="M14 5h1v1h-1zM2 6h12v1h-12z"/></svg>
+        <svg class="sky-cloud sky-cloud-small sky-cloud-far" viewBox="-1 -1 17 10" shape-rendering="crispEdges" focusable="false"><path fill="#86c8f2" d="M7 -1h3v1h-3zM5 0h2v1h-2zM10 0h1v1h-1zM3 1h2v1h-2zM11 1h1v1h-1zM2 2h1v1h-1zM12 2h2v1h-2zM1 3h1v1h-1zM14 3h1v1h-1zM1 4h1v1h-1zM15 4h1v1h-1zM1 5h1v1h-1zM15 5h1v1h-1zM1 6h1v1h-1zM14 6h1v1h-1zM2 7h12v1h-12z"/><path fill="#ffffff" d="M7 0h3v1h-3zM5 1h6v1h-6zM3 2h9v1h-9zM2 3h12v1h-12zM2 4h13v1h-13zM2 5h12v1h-12z"/><path fill="#dbeefb" d="M14 5h1v1h-1zM2 6h12v1h-12z"/></svg>
+        <span class="sky-bird sky-bird-a"><svg class="bird-up" viewBox="0 0 9 4" shape-rendering="crispEdges" focusable="false"><path fill="#3a4a5c" d="M0 0h1v1h-1zM8 0h1v1h-1zM1 1h1v1h-1zM7 1h1v1h-1zM2 2h2v1h-2zM5 2h2v1h-2zM4 3h1v1h-1z"/></svg><svg class="bird-down" viewBox="0 0 9 4" shape-rendering="crispEdges" focusable="false"><path fill="#3a4a5c" d="M4 0h1v1h-1zM2 1h2v1h-2zM5 1h2v1h-2zM1 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM8 3h1v1h-1z"/></svg></span>
+        <span class="sky-bird sky-bird-b"><svg class="bird-up" viewBox="0 0 9 4" shape-rendering="crispEdges" focusable="false"><path fill="#3a4a5c" d="M0 0h1v1h-1zM8 0h1v1h-1zM1 1h1v1h-1zM7 1h1v1h-1zM2 2h2v1h-2zM5 2h2v1h-2zM4 3h1v1h-1z"/></svg><svg class="bird-down" viewBox="0 0 9 4" shape-rendering="crispEdges" focusable="false"><path fill="#3a4a5c" d="M4 0h1v1h-1zM2 1h2v1h-2zM5 1h2v1h-2zM1 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM8 3h1v1h-1z"/></svg></span>
+        <svg class="sky-sparkle sky-sparkle-a" viewBox="0 0 5 5" shape-rendering="crispEdges" focusable="false"><path fill="#f7c948" d="M2 0h1v1h-1zM2 1h1v1h-1zM0 2h2v1h-2zM3 2h2v1h-2zM2 3h1v1h-1zM2 4h1v1h-1z"/></svg>
+        <svg class="sky-sparkle sky-sparkle-b" viewBox="0 0 5 5" shape-rendering="crispEdges" focusable="false"><path fill="#f7c948" d="M2 0h1v1h-1zM2 1h1v1h-1zM0 2h2v1h-2zM3 2h2v1h-2zM2 3h1v1h-1zM2 4h1v1h-1z"/></svg>
+        <svg class="sky-sparkle sky-sparkle-c" viewBox="0 0 5 5" shape-rendering="crispEdges" focusable="false"><path fill="#f7c948" d="M2 0h1v1h-1zM2 1h1v1h-1zM0 2h2v1h-2zM3 2h2v1h-2zM2 3h1v1h-1zM2 4h1v1h-1z"/></svg>
+      </div>
+    </div>
+  </header>
 
-<header>
-  <div class="header-container">
-    <h1 class="site-title">Abhilekh Borah</h1>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./publications.html">Publications</a>
-      <a href="./beyond-research.html">Beyond Research</a>
+  <div class="masthead">
+    <nav class="navigation" aria-label="Main navigation">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#honors">Awards</a>
+      <a href="#experience">Experience</a>
+      <a href="#services">Services</a>
+      <a href="#miscellaneous">Miscellaneous</a>
     </nav>
   </div>
-</header>
 
-<main>
+  <div class="site-layout">
+    <main id="main-content">
+      <section id="about-me" class="about-section" aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading" class="visually-hidden">About Me</h2>
+        <p>I am currently a <strong>Member of Technical Staff (ML)</strong> at <span class="adobe-brand">Adobe</span>, where I work on evaluations and personalized experiences for users interacting with conversational AI through <a href="https://business.adobe.com/products/brand-concierge.html" target="_blank" rel="noopener noreferrer">Adobe Brand Concierge</a>. Previously, I was a Research Intern at <strong class="ms-brand">Microsoft Research, India</strong>, working with <a href="https://scholar.google.com/citations?user=7soDcboAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Vineeth N. Balasubramanian</a> and <a href="https://rakri.github.io/" target="_blank" rel="noopener noreferrer">Ravishankar Krishnaswamy</a> on pre-training multimodal embedding models for visual document retrieval. I also spent a fall at the <a href="https://ctic.nus.edu.sg/" target="_blank" rel="noopener noreferrer">Centre for Trusted Internet Community</a>, <strong>National University of Singapore</strong>, where I worked under <a href="https://discovery.nus.edu.sg/17291-kokil-jaidka" target="_blank" rel="noopener noreferrer">Prof. Kokil Jaidka</a>. I have also had long-term research collaborations at the <a href="https://aiisc.ai" target="_blank" rel="noopener noreferrer">AI Institute</a>, <strong>University of South Carolina</strong>, where I worked under <a href="https://amit.aiisc.ai/" target="_blank" rel="noopener noreferrer">Prof. Amit Sheth</a>. I completed my Bachelor's in Computer Science and Engineering from <strong>Manipal University Jaipur</strong>, India (2022-2026).</p>
+        <p>My research is about building <mark class="highlight">human-centered AI</mark> systems that align with <strong>human intent</strong> and <strong>values</strong>, capture diverse <strong>human behavior</strong> across <strong>social</strong> and <strong>cultural</strong> contexts, and remain <strong>reliable</strong> and <strong>safe</strong> as they <strong>learn</strong>, <strong>adapt</strong>, and <strong>interact</strong> with their environments. Below, I outline the <strong>research directions</strong> I pursue, their impact, and the work done around them.</p>
+        <div class="research-tree" role="group" aria-label="Research directions and selected works">
+          <div class="tree-crown">
+            <svg class="tree-sunflower" viewBox="-50 -50 100 100" aria-hidden="true" focusable="false"><g class="tree-petals"><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(11.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(33.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(56.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(78.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(101.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(123.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(146.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(168.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(191.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(213.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(236.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(258.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(281.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(303.75)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(326.25)"/><ellipse cx="0" cy="-30" rx="7" ry="18.6" fill="#eaa22a" transform="rotate(348.75)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(0)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(22.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(45)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(67.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(90)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(112.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(135)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(157.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(180)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(202.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(225)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(247.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(270)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(292.5)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(315)"/><ellipse cx="0" cy="-28" rx="7" ry="17.4" fill="#f7c948" transform="rotate(337.5)"/></g><circle r="18" fill="#6b3f1d"/><circle r="14" fill="#86501f"/><g fill="#3f2410" opacity="0.75"><circle cx="2.2" cy="0.0" r="1.25"/><circle cx="-2.8" cy="2.6" r="1.25"/><circle cx="0.4" cy="-4.9" r="1.25"/><circle cx="3.5" cy="4.6" r="1.25"/><circle cx="-6.5" cy="-1.1" r="1.25"/><circle cx="6.1" cy="-3.9" r="1.25"/><circle cx="-2.1" cy="7.6" r="1.25"/><circle cx="-3.9" cy="-7.5" r="1.25"/><circle cx="8.5" cy="3.1" r="1.25"/><circle cx="-8.8" cy="3.6" r="1.25"/><circle cx="4.3" cy="-9.1" r="1.25"/><circle cx="3.1" cy="10.0" r="1.25"/><circle cx="-9.5" cy="-5.5" r="1.25"/><circle cx="11.1" cy="-2.4" r="1.25"/><circle cx="-6.8" cy="9.7" r="1.25"/><circle cx="-1.6" cy="-12.1" r="1.25"/><circle cx="9.6" cy="8.1" r="1.25"/><circle cx="-13.0" cy="0.5" r="1.25"/><circle cx="9.5" cy="-9.4" r="1.25"/><circle cx="-0.6" cy="13.7" r="1.25"/><circle cx="-9.0" cy="-10.8" r="1.25"/><circle cx="14.2" cy="1.9" r="1.25"/><circle cx="-12.1" cy="8.4" r="1.25"/><circle cx="3.3" cy="-14.7" r="1.25"/><circle cx="7.6" cy="13.3" r="1.25"/><circle cx="-14.9" cy="-4.8" r="1.25"/><circle cx="14.5" cy="-6.7" r="1.25"/><circle cx="-6.3" cy="15.0" r="1.25"/><circle cx="-5.6" cy="-15.6" r="1.25"/><circle cx="14.9" cy="7.8" r="1.25"/><circle cx="-16.6" cy="4.4" r="1.25"/><circle cx="9.4" cy="-14.6" r="1.25"/><circle cx="3.0" cy="17.4" r="1.25"/><circle cx="-14.2" cy="-11.0" r="1.25"/></g></svg>
+            <span class="tree-root">Human-centered AI</span>
+          </div>
+          <div class="tree-stem" aria-hidden="true">
+            <svg viewBox="0 0 1000 110" preserveAspectRatio="none" focusable="false">
+              <path d="M500 0V46"/>
+              <path d="M500 46C500 80 125 70 125 110"/>
+              <path d="M500 46C500 78 375 76 375 110"/>
+              <path d="M500 46C500 78 625 76 625 110"/>
+              <path d="M500 46C500 80 875 70 875 110"/>
+            </svg>
+            <span class="tree-leaf" style="left: 49.2%; top: 20px; --r: -35deg;"></span>
+            <span class="tree-leaf" style="left: 50.8%; top: 30px; --r: 215deg;"></span>
+            <span class="tree-leaf" style="left: 31.25%; top: 76px; --r: -20deg;"></span>
+            <span class="tree-leaf" style="left: 43.75%; top: 77px; --r: -55deg;"></span>
+            <span class="tree-leaf" style="left: 56.25%; top: 77px; --r: 235deg;"></span>
+            <span class="tree-leaf" style="left: 68.75%; top: 76px; --r: 200deg;"></span>
+            <span class="tree-bud tone-blue" style="left: 12.5%;"></span>
+            <span class="tree-bud tone-amber" style="left: 37.5%;"></span>
+            <span class="tree-bud tone-coral" style="left: 62.5%;"></span>
+            <span class="tree-bud tone-green" style="left: 87.5%;"></span>
+          </div>
+          <div class="tree-branches">
+            <div class="tree-card tone-blue" role="group" aria-label="Reasoning & Generalization in Models">
+              <h3><span class="tree-num" aria-hidden="true">01</span>Reasoning and Generalization in Models</h3>
+              <ul class="tree-list">
+                <li><a href="https://arxiv.org/abs/2602.01132" target="_blank" rel="noopener noreferrer">LogiQAte</a><span class="tree-venue">EACL 2026 <span class="tree-flag">(Oral)</span></span></li>
+                <li><a href="https://arxiv.org/abs/2508.07321" target="_blank" rel="noopener noreferrer">ObfusQAte</a><span class="tree-venue">LREC 2026</span></li>
+              </ul>
+            </div>
+            <div class="tree-card tone-amber" role="group" aria-label="Interpreting, Evaluating, & Improving Model Safety">
+              <h3><span class="tree-num" aria-hidden="true">02</span>Interpreting, Evaluating, & Improving Model Safety</h3>
+              <ul class="tree-list">
+                <li><a href="https://aclanthology.org/2025.emnlp-main.145/" target="_blank" rel="noopener noreferrer">AQI</a><span class="tree-venue">EMNLP 2025 <span class="tree-flag">(Oral)</span></span></li>
+                <li><a href="https://arxiv.org/abs/2506.14903" target="_blank" rel="noopener noreferrer">DETONATE</a><span class="tree-venue">AAAI 2026 <span class="tree-flag">(Oral)</span></span></li>
+                <li><a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Always Refuse</a><span class="tree-venue">AAAI 2026 Student Abstract</span></li>
+                <li><a href="https://aclanthology.org/2025.ijcnlp-long.100/" target="_blank" rel="noopener noreferrer">The Visual Counter Turing Test</a><span class="tree-venue">IJCNLP-AACL 2025</span></li>
+              </ul>
+            </div>
+            <div class="tree-card tone-coral" role="group" aria-label="AI Across Cultures and Societies">
+              <h3><span class="tree-num" aria-hidden="true">03</span>AI Across Cultures & Societies</h3>
+              <ul class="tree-list">
+                <li><a href="https://aclanthology.org/2025.emnlp-main.68/" target="_blank" rel="noopener noreferrer">DRISHTIKON</a><span class="tree-venue">EMNLP 2025</span></li>
+                <li><a href="https://aclanthology.org/2025.nlp4pi-1.4/" target="_blank" rel="noopener noreferrer">CliME</a><span class="tree-venue">NLP4PI Workshop @ ACL 2025<span class="tree-award">(<span aria-hidden="true">🏆</span> Outstanding Paper Award)</span></span></li>
+              </ul>
+            </div>
+            <div class="tree-card tone-green" role="group" aria-label="Simulating Social Behavior with Models">
+              <h3><span class="tree-num" aria-hidden="true">04</span>Simulating Social Behavior with Models</h3>
+              <ul class="tree-list">
+                <li><a href="https://openreview.net/forum?id=73J3hsato3" target="_blank" rel="noopener noreferrer">Social Agents</a><span class="tree-venue">ICLR 2026 (work done at <span class="adobe-brand">Adobe</span>)</span></li>
+                <li><a href="https://arxiv.org/pdf/2605.29062" target="_blank" rel="noopener noreferrer">SovSim</a><span class="tree-venue">Pluralistic Alignment Workshop @ ICML 2026</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>Please check out my <a href="#publications">publications</a> for more details about my work. I'm always happy to discuss research and explore collaborations. Please feel free to reach out at <a href="mailto:abhilekhxborah@gmail.com">abhilekhxborah@gmail.com</a>!</p>
+      </section>
 
-<section class="intro">
-    <div class="intro-image">
-        <img src="./assets/profile-pic.png" alt="Abhilekh Borah">
+      <section id="news" aria-labelledby="news-heading">
+        <h2 id="news-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 11 12" shape-rendering="crispEdges" focusable="false"><path fill="#e8432a" d="M5 0h1v1h-1zM4 1h2v1h-2zM3 2h3v1h-3zM3 3h4v1h-4zM9 3h1v1h-1zM2 4h5v1h-5zM8 4h2v1h-2zM2 5h9v1h-9zM1 6h10v1h-10zM1 7h10v1h-10zM1 8h10v1h-10zM1 9h9v1h-9zM2 10h7v1h-7zM3 11h5v1h-5z"/><path fill="#f59f00" d="M3 6h6v1h-6zM3 7h6v1h-6zM2 8h7v1h-7zM2 9h6v1h-6zM3 10h5v1h-5z"/><path fill="#ffe066" d="M4 8h3v1h-3zM4 9h3v1h-3zM4 10h3v1h-3z"/></svg></span> News</h2>
+        <div class="news-scroll" tabindex="0" role="region" aria-label="News, scrollable">
+          <ul class="news-list">
+            <li><span class="news-date">Jul 2026,</span> Joined <span class="adobe-brand">Adobe</span> as a <strong>Member of Technical Staff (ML)</strong>.</li>
+            <li><span class="news-date">Jul 2026,</span> Presented <a href="https://arxiv.org/pdf/2605.29062" target="_blank" rel="noopener noreferrer">SovSim</a> at the <strong>Pluralistic Alignment Workshop</strong>, <strong>ICML 2026</strong>, in Seoul, South Korea <img class="flag" src="https://flagcdn.com/w40/kr.png" alt="Flag of South Korea" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Jul 2026,</span> Received the <strong>FAR.AI</strong> <a href="https://far.ai/events/event-list/seoul-alignment-workshop-2026" target="_blank" rel="noopener noreferrer">Seoul Alignment Workshop 2026</a> <strong>Travel Grant</strong>, co-located with ICML 2026.</li>
+            <li><span class="news-date">Jun 2026,</span> Graduated with my Bachelor's from <strong>Manipal University Jaipur</strong>, India.</li>
+            <li><span class="news-date">May 2026,</span> <a href="https://arxiv.org/abs/2508.07321" target="_blank" rel="noopener noreferrer">ObfusQAte</a> has been accepted at <strong>LREC 2026</strong>!</li>
+            <li><span class="news-date">Apr 2026,</span> <a href="https://behavior-in-the-wild.github.io/social-agents.html" target="_blank" rel="noopener noreferrer">Social Agents</a> has been accepted at <strong>ICLR 2026</strong>!</li>
+            <li><span class="news-date">Apr 2026,</span> Received the <strong>ICLR 2026 Travel Grant</strong>.</li>
+            <li><span class="news-date">Mar 2026,</span> Presented <a href="https://arxiv.org/abs/2602.01132" target="_blank" rel="noopener noreferrer">LogiQAte (Oral)</a> at <strong>EACL 2026</strong> in Rabat, Morocco <img class="flag" src="https://flagcdn.com/w40/ma.png" alt="Flag of Morocco" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Mar 2026,</span> Received the <strong>EACL 2026 Diversity and Inclusion (D&amp;I) Award</strong>.</li>
+            <li><span class="news-date">Mar 2026,</span> Joined <strong class="ms-brand">Microsoft Research, India</strong> as a <strong>Research Intern</strong>.</li>
+            <li><span class="news-date">Feb 2026,</span> Invited Speaker at the <strong>Assam AI Initiative</strong>, delivered a <a href="https://www.youtube.com/live/rh8YygHL-go?si=i2khxsYE0gi2Z-pg" target="_blank" rel="noopener noreferrer">talk</a> on AI alignment research.</li>
+            <li><span class="news-date">Jan 2026,</span> Presented two of our papers, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/41106" target="_blank" rel="noopener noreferrer">DETONATE (Oral)</a> and <a href="https://ojs.aaai.org/index.php/AAAI/article/view/42191" target="_blank" rel="noopener noreferrer">Always Refuse</a>, at <strong>AAAI 2026</strong> in Singapore <img class="flag" src="https://flagcdn.com/w40/sg.png" alt="Flag of Singapore" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Jan 2026,</span> Received the <strong>AAAI 2026 Scholarship and Volunteer Award</strong>.</li>
+            <li><span class="news-date">Dec 2025,</span> Presented our paper, <a href="https://aclanthology.org/2025.ijcnlp-long.100/" target="_blank" rel="noopener noreferrer">The Visual Counter Turing Test</a>, at <strong>IJCNLP-AACL 2025</strong> in Mumbai, India <img class="flag" src="https://flagcdn.com/w40/in.png" alt="Flag of India" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Nov 2025,</span> Presented two of our papers, <a href="https://aclanthology.org/2025.emnlp-main.145/" target="_blank" rel="noopener noreferrer">Alignment Quality Index (Oral)</a> and <a href="https://aclanthology.org/2025.emnlp-main.68/" target="_blank" rel="noopener noreferrer">DRISHIKON</a>, at <strong>EMNLP 2025</strong> in Suzhou, China <img class="flag" src="https://flagcdn.com/w40/cn.png" alt="Flag of China" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Nov 2025,</span> Received the <strong>EMNLP 2025 Diversity and Inclusion (D&amp;I) Award</strong>.</li>
+            <li><span class="news-date">Aug 2025,</span> Joined the <strong>National University of Singapore</strong> as a <strong>Visiting Research Scholar</strong>.</li>
+            <li><span class="news-date">Jul 2025,</span> <a href="https://aclanthology.org/2025.nlp4pi-1.4/" target="_blank" rel="noopener noreferrer">CliME</a> has been awarded the <span aria-hidden="true">🏆</span> <a href="https://www.linkedin.com/posts/abhilekh-borah-aa758a15a_acl2025-climatechange-responsibleai-activity-7357017258029674496--rmn?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACYsLZ8BdrVGbxX4NFz9Db2ZNayVStyBJNE" target="_blank" rel="noopener noreferrer">Outstanding Paper Award</a> at <strong>ACL 2025</strong>, NLP for Positive Impact Workshop, in Vienna, Austria <img class="flag" src="https://flagcdn.com/w40/at.png" alt="Flag of Austria" width="20" height="15" loading="lazy">.</li>
+            <li><span class="news-date">Jun 2025,</span> Joined <span class="adobe-brand">Adobe</span> (<a href="https://adobe.mdsr.live/" target="_blank" rel="noopener noreferrer">Media &amp; Data Science Research Lab</a>) as a <strong>Research Intern</strong>.</li>
+          </ul>
+        </div>
+      </section>
 
-<div class="social-links">
-    <a href="https://www.linkedin.com/in/abhilekh-borah-aa758a15a/" class="icon-linkedin">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="mailto:abhilekhxborah@gmail.com" class="icon-mail">
-        <i class="fa-solid fa-envelope"></i>
-    </a>
-    <a href="https://scholar.google.com/citations?user=iZG9MEMAAAAJ&hl=en" class="icon-scholar">
-        <i class="ai ai-google-scholar-square"></i>
-    </a>
-    <a href="https://x.com/BorahAbhilekh" class="icon-x">
-        <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    <a href="https://drive.google.com/file/d/136_Nmf9zdIMclzmzzHfHTpA0aCt6OYvJ/view?usp=sharing" class="icon-cv">
-        <i class="ai ai-cv-square"></i>
-    </a>
-</div>
-<img src="./assets/pikachu-wave.gif"
-     alt="Pokemon Pikachu"
-     class="pikachu-gif">
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 13 12" shape-rendering="crispEdges" focusable="false"><path fill="#203c57" d="M0 0h9v1h-9zM0 11h9v1h-9zM0 1h1v1h-1zM0 2h1v1h-1zM0 3h1v1h-1zM0 4h1v1h-1zM0 5h1v1h-1zM0 6h1v1h-1zM0 7h1v1h-1zM0 8h1v1h-1zM0 9h1v1h-1zM0 10h1v1h-1zM8 1h1v1h-1zM8 2h1v1h-1zM8 3h1v1h-1zM8 4h1v1h-1zM8 5h1v1h-1zM8 6h1v1h-1zM8 7h1v1h-1zM8 8h1v1h-1zM8 9h1v1h-1zM8 10h1v1h-1z"/><path fill="#ffffff" d="M1 1h7v1h-7zM1 2h7v1h-7zM1 3h7v1h-7zM1 4h7v1h-7zM1 5h7v1h-7zM1 6h7v1h-7zM1 7h7v1h-7zM1 8h7v1h-7zM1 9h7v1h-7zM1 10h7v1h-7z"/><path fill="#3f86c2" d="M2 3h5v1h-5zM2 5h5v1h-5zM2 7h3v1h-3z"/><path fill="#f7c948" d="M11 2h1v1h-1zM10 3h2v1h-2zM9 4h2v1h-2zM8 5h2v1h-2zM7 6h2v1h-2zM6 7h2v1h-2z"/><path fill="#6b3f1d" d="M5 8h2v1h-2z"/></svg></span> Publications</h2>
+        <p class="equal-note">* denotes equal contribution.</p>
 
-    </div>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">ICML 2026 Workshop</span>
+            <a href="https://arxiv.org/abs/2605.29062" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/sovsim.png" alt="SovSim paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://arxiv.org/abs/2605.29062" target="_blank" rel="noopener noreferrer">Bosses, Kings, and the Commons: Cooperation Under Power Asymmetry in LLM Societies</a></h3>
+            <p class="publication-authors"><strong>Abhilekh Borah</strong></p>
+            <p class="publication-venue">Pluralistic Alignment Workshop, International Conference on Machine Learning (ICML), 2026</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/pdf/2605.29062" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+            </div>
+            <p class="publication-summary">A simulation in which LLM agents with different levels of authority repeatedly decide how much to extract from a shared resource, to study how unequal power shapes cooperation and collective behavior in multi agent systems.</p>
+          </div>
+        </article>
 
-    <div class="intro-text">
-        <h2>
-            <span class="first-name">Abhilekh</span>
-            <span class="last-name">Borah</span>
-            <span class="first-name"> / অভিলেখ</span>
-            <span class="last-name"> বৰা</span>
-        </h2>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">LREC 2026</span>
+            <a href="https://arxiv.org/abs/2508.07321" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/obfusqate.png" alt="ObfusQAte paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://arxiv.org/abs/2508.07321" target="_blank" rel="noopener noreferrer">ObfusQAte: A Proposed Framework to Evaluate LLM Robustness on Obfuscated Factual Question Answering</a></h3>
+            <p class="publication-authors">Shubhra Ghosh*, <strong>Abhilekh Borah</strong>*, Aditya Kumar Guru*, Kripabandhu Ghosh</p>
+            <p class="publication-venue">Language Resources and Evaluation Conference (LREC), 2026</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2508.07321" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/DeityAG/ObfusQAte" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+            <p class="publication-summary">Tests whether LLMs truly understand the meaning of factual questions or rely on patterns memorized during training, by transforming questions into semantically equivalent forms that keep the answer the same.</p>
+          </div>
+        </article>
 
-        <p class="tagline">making llms more human 🌻</p>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">ICLR 2026</span>
+            <a href="https://openreview.net/forum?id=73J3hsato3&amp;referrer=%5BAuthor+Console%5D(/group?id=ICLR.cc/2026/Conference/Authors#your-submissions)" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/social-agents.jpg" alt="Social Agents paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://openreview.net/forum?id=73J3hsato3&amp;referrer=%5BAuthor+Console%5D(/group?id=ICLR.cc/2026/Conference/Authors#your-submissions)" target="_blank" rel="noopener noreferrer">Social Agents: Collective Intelligence Improves LLM Predictions</a></h3>
+            <p class="publication-authors">Aanisha Bhattacharyya*, <strong>Abhilekh Borah</strong>*, Yaman Kumar Singla*, Rajiv Ratn Shah, Changyou Chen, Balaji Krishnamurthy</p>
+            <p class="publication-venue">International Conference on Learning Representations (ICLR), 2026</p>
+            <div class="publication-links">
+              <a href="https://openreview.net/forum?id=73J3hsato3&amp;referrer=%5BAuthor+Console%5D(/group?id=ICLR.cc/2026/Conference/Authors#your-submissions)" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://behavior-in-the-wild.github.io/social-agents.html" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe" aria-hidden="true"></i> Project Page</a>
+            </div>
+            <p class="publication-summary">Inspired by the wisdom of the crowd, Social Agents creates personas with different demographic and psychographic attributes that independently judge content (like advertisements, videos, and webpages), and combines their opinions to predict how real people respond across eleven behavioral tasks.</p>
+          </div>
+        </article>
 
-        <hr>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">EACL 2026 Main</span>
+            <a href="https://arxiv.org/abs/2602.01132" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/logiqate.png" alt="Logical obfuscation paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://arxiv.org/abs/2602.01132" target="_blank" rel="noopener noreferrer">Don't Judge a Book by its Cover: Testing LLMs' Robustness Under Logical Obfuscation</a> <span class="distinction">(Oral)</span></h3>
+            <p class="publication-authors"><strong>Abhilekh Borah</strong>, Shubhra Ghosh*, Kedar Joshi*, Aditya Kumar Guru*, Kripabandhu Ghosh</p>
+            <p class="publication-venue">Conference of the European Chapter of the Association for Computational Linguistics (EACL), 2026</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2602.01132" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/abhilekhborah/logical-obfuscation" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <a href="https://huggingface.co/datasets/abhilekhborah/LogiQAte" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset</a>
+            </div>
+            <p class="publication-summary">Tests whether LLMs truly understand the underlying structure of a question or rely on patterns memorized during training, by transforming questions into logically equivalent forms that keep the answer the same.</p>
+          </div>
+        </article>
 
-<p>
-Hey! I'm <strong>Abhilekh Borah</strong>, a final-year CS undergraduate at
-Manipal University Jaipur, India. I am currently a Research Intern at <strong>Microsoft Research, India</strong>, working under <a href="https://scholar.google.com/citations?user=7soDcboAAAAJ&hl=en" target="_blank">Vineeth Balasubramaniam</a> and <a href="https://rakri.github.io/" target="_blank">Ravishankar Krishnaswamy</a> on building multimodal embedding models. My prime interest lies in AI Alignment,
-exploring how <strong>large language and vision models</strong> can operate
-<strong>safely</strong>, <strong>ethically</strong> and <strong>responsibly</strong> that reflect
-<strong>human values, behavior,</strong> and <strong>user intent</strong>,
-contributing to more <strong>equitable, trustworthy,</strong> and <strong>fair</strong> systems.
-</p>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">AAAI 2026 AIA Track</span>
+            <a href="https://arxiv.org/abs/2506.14903" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/detonate.png" alt="DETONATE paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://arxiv.org/abs/2506.14903" target="_blank" rel="noopener noreferrer">DETONATE - A Benchmark for Text-to-Image Alignment and Kernelized Direct Preference Optimization</a> <span class="distinction">(Oral)</span></h3>
+            <p class="publication-authors">Renjith Prasad*, <strong>Abhilekh Borah</strong>*, Hasnat Md Abdullah*, Chathurangi Shyalika, Gurpreet Singh, Ritvik Garimella, Rajarshi Roy, Harshul Surana, Nasrin Imanpour, Suranjana Trivedy, Amit Sheth, Amitava Das</p>
+            <p class="publication-venue">AAAI Conference on Artificial Intelligence, 2026, Special Track on AI Alignment (AIA)</p>
+            <div class="publication-links">
+              <a href="https://arxiv.org/abs/2506.14903" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://detonate-t2i.github.io/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-globe" aria-hidden="true"></i> Project Page</a>
+              <a href="https://github.com/abhilekhborah/Detonate" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+            <p class="publication-summary">A large-scale benchmark of human-verified hateful and non-hateful image pairs across race, gender, and disability, along with DPO-Kernels, a preference-learning method for teaching text-to-image models human safety preferences.</p>
+          </div>
+        </article>
 
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">AAAI 2026 Student Abstract</span>
+            <a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/alwaysrefuse.png" alt="Always Refuse paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Always Refuse: Steering LLMs Against Jailbreaks with Contrastive Activations</a></h3>
+            <p class="publication-authors"><strong>Abhilekh Borah</strong>, Niranjan Chebrolu, Kokil Jaidka</p>
+            <p class="publication-venue">AAAI Conference on Artificial Intelligence, 2026, Student Abstract and Poster Program</p>
+            <div class="publication-links">
+              <a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/abhilekhborah/Always-Refuse" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+            <p class="publication-summary">A training-free method that compares model activations for safe and unsafe requests to find a refusal direction, then applies it during inference to help models refuse harmful requests under jailbreak attacks.</p>
+          </div>
+        </article>
 
-<p>
-I have first-authored <strong>8+</strong> research papers at top-tier core CS conferences such as
-<strong>ICLR, ACL, EMNLP, AAAI</strong>, and <strong>EACL</strong>. In addition, I have conducted
-research across both academia and industry through <strong>6+</strong> internships at organizations such as <strong>Adobe (<a href="https://adobe.mdsr.live/">Media & Data Science Research Lab</a>)</strong>, and the
-<strong>National University of Singapore (<a href="https://ctic.nus.edu.sg/">Centre for Trusted Internet Community</a>)</strong>.
-</p>
-<p>
-Please check out <a href="./publications.html">publications</a> for more details about my work.
-If you’re interested in discussing research or exploring collaborations, feel free to reach out at
-<a href="mailto:abhilekhxborah@gmail.com">abhilekhxborah@gmail.com</a>.
-</p>
-    </div>
-</section>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">IJCNLP-AACL 2025 Main</span>
+            <a href="https://aclanthology.org/2025.ijcnlp-long.100/" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/vct.png" alt="Visual Counter Turing Test paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://aclanthology.org/2025.ijcnlp-long.100/" target="_blank" rel="noopener noreferrer">The Visual Counter Turing Test (VCT<sup>2</sup>): A Benchmark for Evaluating AI-Generated Image Detection and the Visual AI Index (V<sub>AI</sub>)</a></h3>
+            <p class="publication-authors">Nasrin Imanpour*, <strong>Abhilekh Borah</strong>*, Shashwat Bajpai*, Subhankar Ghosh*, Sainath Reddy Sankepally*, Hasnat Md Abdullah, Nishoak Kosaraju, Shreyas Dixit, Ashhar Aziz, Shwetangshu Biswas, Vinija Jain, Aman Chadha, Song Wang, Amit Sheth, Amitava Das</p>
+            <p class="publication-venue">International Joint Conference on Natural Language Processing and Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics (IJCNLP-AACL), 2025</p>
+            <div class="publication-links">
+              <a href="https://aclanthology.org/2025.ijcnlp-long.100/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/nasrinimapour/VCT2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <a href="https://huggingface.co/datasets/anonymous1233/COCO_AII" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset (COCO)</a>
+              <a href="https://huggingface.co/datasets/anonymous1233/twitter_AII" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset (Twitter)</a>
+            </div>
+            <p class="publication-summary">A benchmark of real and AI-generated images to evaluate AI-generated image detection methods, along with a metric to quantify and rank the perceptual realism of generated images.</p>
+          </div>
+        </article>
 
-<section class="section">
-    <h3>News 🔥 </h3>
-    <p>🎉 <a href="https://arxiv.org/abs/2508.07321">ObfusQAte</a> has been accepted at <strong>LREC 2026</strong>!</p>
-    <p>🎉 <a href="https://behavior-in-the-wild.github.io/social-agents.html">Social Agents</a> has been accepted at <strong>ICLR 2026</strong>!</p>
-<p>
-🎉 <a href="https://arxiv.org/abs/2602.01132">Don't Judge a Book by its Cover</a> has been selected for an
-<strong>Oral</strong> presentation at <strong>EACL 2026</strong>!
-</p>
-<p>
-🇸🇬 Presented two of our papers, <a href="https://detonate-t2i.github.io/">DETONATE (Oral)</a> and 
-<a href="https://drive.google.com/file/d/1iD4WLHAcXDn0RvYKtz82PJIwzyadOUkJ/view?usp=drive_link">Always Refuse</a>, at <strong>AAAI 2026</strong> in Singapore.
-</p>
-<p>
-🇮🇳 Presented our paper, <a href="https://aclanthology.org/2025.ijcnlp-long.100/">The Visual Counter Turing Test</a>, at <strong>IJCNLP-AACL 2025</strong> in Mumbai, India.
-</p>
-<p>
-🇨🇳 Presented two of our papers, <a href="https://aclanthology.org/2025.emnlp-main.145/">Alignment Quality Index (Oral)</a> and 
-<a href="https://aclanthology.org/2025.emnlp-main.68/">DRISHIKON</a>, at <strong>EMNLP 2025</strong> in Suzhou, China.
-</p>
-<p>
-🏆 <a href="https://aclanthology.org/2025.nlp4pi-1.4/">CliME</a> has been awarded the 
-<a href="https://www.linkedin.com/posts/abhilekh-borah-aa758a15a_acl2025-climatechange-responsibleai-activity-7357017258029674496--rmn?utm_source=share&utm_medium=member_desktop&rcm=ACoAACYsLZ8BdrVGbxX4NFz9Db2ZNayVStyBJNE">Outstanding Paper Award</a> 
-at <strong>ACL 2025</strong>, NLP for Positive Impact Workshop, in Vienna, Austria 🇦🇹.
-</p>
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">EMNLP 2025 Main</span>
+            <a href="https://aclanthology.org/2025.emnlp-main.145/" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/aqi-figure.png" alt="Alignment Quality Index paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://aclanthology.org/2025.emnlp-main.145/" target="_blank" rel="noopener noreferrer">Alignment Quality Index (AQI) - Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations</a> <span class="distinction">(Oral)</span></h3>
+            <p class="publication-authors"><strong>Abhilekh Borah</strong>*, Chhavi Sharma*, Danush Khanna*, Utkarsh Bhatt, Gurpreet Singh, Hasnat Md Abdullah, Raghav Kaushik Ravi, Vinija Jain, Shubham Singh, Vasu Sharma, Arpita Vats, Rahul Raja, Aman Chadha, Amitava Das</p>
+            <p class="publication-venue">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025</p>
+            <div class="publication-links">
+              <a href="https://aclanthology.org/2025.emnlp-main.145/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/heychhavi/aqi-eval/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <a href="https://huggingface.co/datasets/hasnat79/litmus" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset (LITMUS)</a>
+            </div>
+            <p class="publication-summary">An alignment metric that looks inside the model, measuring how distinctly safe and unsafe behaviors are represented in its activations, to assess alignment beyond output-based measures like refusal rate.</p>
+          </div>
+        </article>
 
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">EMNLP 2025 Main</span>
+            <a href="https://aclanthology.org/2025.emnlp-main.68/" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/drishtikon.png" alt="DRISHTIKON paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://aclanthology.org/2025.emnlp-main.68/" target="_blank" rel="noopener noreferrer">DRISHTIKON: A Multimodal Multilingual Benchmark for Testing Language Models' Understanding on Indian Culture</a></h3>
+            <p class="publication-authors">Arijit Maji, Raghvendra Kumar, Akash Ghosh, Anushka, Nemil Shah, <strong>Abhilekh Borah</strong>, Vanshika Shah, Nishant Mishra, Sriparna Saha</p>
+            <p class="publication-venue">Conference on Empirical Methods in Natural Language Processing (EMNLP), 2025</p>
+            <div class="publication-links">
+              <a href="https://aclanthology.org/2025.emnlp-main.68/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/13ari/DRISHTIKON" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <a href="https://huggingface.co/datasets/13ari/DRISHTIKON" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset</a>
+            </div>
+            <p class="publication-summary">A multimodal, multilingual benchmark testing whether vision-language models understand Indian culture (e.g., festivals, attire, cuisine, art forms, and heritage) across 15 languages, all 28 states, and 8 union territories.</p>
+          </div>
+        </article>
 
+        <article class="publication">
+          <div class="publication-image">
+            <span class="conference-ribbon">ACL 2025 Workshop</span>
+            <a href="https://aclanthology.org/2025.nlp4pi-1.4/" tabindex="-1" aria-hidden="true" target="_blank" rel="noopener noreferrer"><img src="./assets/clime.png" alt="CliME paper overview" width="400" height="230" loading="lazy"></a>
+          </div>
+          <div class="publication-content">
+            <h3 class="publication-title"><a href="https://aclanthology.org/2025.nlp4pi-1.4/" target="_blank" rel="noopener noreferrer">CliME: Evaluating Multimodal Climate Discourse on Social Media and the Climate Alignment Quotient (CAQ)</a> <span class="distinction">(<span aria-hidden="true">🏆</span> Outstanding Paper Award)</span></h3>
+            <p class="publication-authors"><strong>Abhilekh Borah</strong>*, Hasnat Md Abdullah*, Kangda Wei, Ruihong Huang</p>
+            <p class="publication-venue">Workshop on NLP for Positive Impact (NLP4PI), Annual Meeting of the Association for Computational Linguistics (ACL), 2025</p>
+            <div class="publication-links">
+              <a href="https://aclanthology.org/2025.nlp4pi-1.4/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Paper</a>
+              <a href="https://github.com/abhilekhborah/CliME" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+              <a href="https://huggingface.co/datasets/climedataset/CliME" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-database" aria-hidden="true"></i> Dataset</a>
+            </div>
+            <p class="publication-summary">A multimodal dataset of climate-related social-media posts (primarily memes), with a metric that checks whether model responses are supported by evidence, relevant to the climate claim, and clearly communicated.</p>
+          </div>
+        </article>
+      </section>
 
+      <section id="honors" aria-labelledby="honors-heading">
+        <h2 id="honors-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 11 11" shape-rendering="crispEdges" focusable="false"><path fill="#3f86c2" d="M2 0h2v1h-2zM3 1h2v1h-2z"/><path fill="#e8432a" d="M7 0h2v1h-2zM6 1h2v1h-2z"/><path fill="#b8860b" d="M3 3h5v1h-5zM2 4h7v1h-7zM1 5h9v1h-9zM1 6h9v1h-9zM1 7h9v1h-9zM1 8h9v1h-9zM2 9h7v1h-7zM3 10h5v1h-5z"/><path fill="#f2b705" d="M3 4h5v1h-5zM2 5h7v1h-7zM2 6h7v1h-7zM2 7h7v1h-7zM2 8h7v1h-7zM3 9h5v1h-5z"/><path fill="#ffe066" d="M5 5h1v1h-1zM4 6h3v1h-3zM5 7h1v1h-1z"/></svg></span> Awards</h2>
+        <ul class="detail-list">
+          <li>Recipient, <strong>FAR.AI</strong> <a href="https://far.ai/events/event-list/seoul-alignment-workshop-2026" target="_blank" rel="noopener noreferrer">Seoul Alignment Workshop 2026</a> <strong>Travel Grant</strong>, co-located with ICML 2026.</li>
+          <li>Recipient, <strong>ICLR 2026 Travel Grant</strong>.</li>
+          <li>Recipient, <strong>EACL 2026 Diversity and Inclusion (D&amp;I) Award</strong>.</li>
+          <li>Recipient, <strong>AAAI 2026 Scholarship and Volunteer Award</strong>.</li>
+          <li>Recipient, <strong>EMNLP 2025 Diversity and Inclusion (D&amp;I) Award</strong>.</li>
+          <li>Awarded <span aria-hidden="true">🏆</span> <strong>Outstanding Paper Award</strong> at the NLP for Positive Impact Workshop, ACL 2025, for <a href="https://aclanthology.org/2025.nlp4pi-1.4/" target="_blank" rel="noopener noreferrer">CliME</a>.</li>
+          <li>Winner, <a href="https://www.sih.gov.in/" target="_blank" rel="noopener noreferrer">Smart India Hackathon 2024</a> (the world's largest open innovation model), competing among 299,352 nominated students across India.</li>
+          <li>Recipient, <strong>Dean's Excellence in Academics Award</strong> and <strong>Student Excellence Award</strong> from Manipal University Jaipur in 2024 for outstanding achievements in academics and research.</li>
+        </ul>
+      </section>
 
+            <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 11 12" shape-rendering="crispEdges" focusable="false"><path fill="#e8432a" d="M2 6h1v1h-1zM1 7h2v1h-2zM1 8h2v1h-2zM1 9h1v1h-1zM8 6h1v1h-1zM8 7h2v1h-2zM8 8h2v1h-2zM9 9h1v1h-1z"/><path fill="#203c57" d="M5 0h1v1h-1zM4 1h3v1h-3zM3 2h5v1h-5zM3 3h5v1h-5zM3 4h5v1h-5zM3 5h5v1h-5zM3 6h5v1h-5zM3 7h5v1h-5zM3 8h5v1h-5zM4 9h3v1h-3z"/><path fill="#ffffff" d="M4 2h3v1h-3zM4 3h3v1h-3zM4 4h3v1h-3zM4 5h3v1h-3zM4 6h3v1h-3zM4 7h3v1h-3z"/><path fill="#3f86c2" d="M5 4h1v1h-1zM5 5h1v1h-1z"/><path fill="#f59f00" d="M4 10h3v1h-3zM5 11h1v1h-1z"/><path fill="#ffe066" d="M5 10h1v1h-1z"/></svg></span> Experience</h2>
+        <h3 class="interest-heading">Industry Experience</h3>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-org"><img class="org-logo" src="./assets/adobe-icon.png" alt="" width="22" height="22"><span class="adobe-brand">Adobe</span></span>
+            <span class="timeline-role">Member of Technical Staff (ML)</span>
+            <span class="timeline-meta">July 2026 - Present, Bangalore, India</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org"><img class="org-logo" src="./assets/microsoft-icon.png" alt="" width="22" height="22"><span class="ms-brand">Microsoft Research</span></span>
+            <span class="timeline-role">Research Intern</span>
+            <span class="timeline-sup">Supervisors: <a href="https://www.microsoft.com/en-us/research/people/vineethn/" target="_blank" rel="noopener noreferrer">Vineeth N. Balasubramanian</a>, <a href="https://www.microsoft.com/en-us/research/people/rakri/" target="_blank" rel="noopener noreferrer">Ravishankar Krishnaswamy</a></span>
+            <span class="timeline-meta">March 2026 - June 2026, Bangalore, India</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org"><img class="org-logo" src="./assets/adobe-icon.png" alt="" width="22" height="22"><span class="adobe-brand">Adobe</span>, <a href="https://adobe.mdsr.live/" target="_blank" rel="noopener noreferrer">Media and Data Science Research (MDSR) Lab</a></span>
+            <span class="timeline-role">Research Intern</span>
+            <span class="timeline-sup">Supervisor: <a href="https://adobe.mdsr.live/people/yaman-kumar-singla/" target="_blank" rel="noopener noreferrer">Yaman Kumar Singla</a></span>
+            <span class="timeline-meta">May 2025 - August 2025, Noida, India</span>
+          </li>
+        </ul>
+        <h3 class="interest-heading">Academic Research Experience</h3>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-org">National University of Singapore (NUS)</span>
+            <span class="timeline-role">Visiting Research Scholar</span>
+            <span class="timeline-sup">Supervisor: <a href="https://discovery.nus.edu.sg/17291-kokil-jaidka" target="_blank" rel="noopener noreferrer">Prof. Kokil Jaidka</a></span>
+            <span class="timeline-meta">Sep 2025 - Nov 2025, Singapore</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org">AI Institute, University of South Carolina</span>
+            <span class="timeline-role">Research Intern</span>
+            <span class="timeline-sup">Supervisors: <a href="https://amit.aiisc.ai/" target="_blank" rel="noopener noreferrer">Prof. Amit Sheth</a>, <a href="https://scholar.google.com/citations?user=HYpfhaEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Amitava Das</a></span>
+            <span class="timeline-meta">Sep 2024 - May 2025, Remote</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org">Texas A&amp;M University</span>
+            <span class="timeline-role">Undergraduate Researcher</span>
+            <span class="timeline-sup">Supervisor: <a href="https://people.engr.tamu.edu/huangrh/index.html" target="_blank" rel="noopener noreferrer">Prof. Ruihong Huang</a></span>
+            <span class="timeline-meta">Feb 2025 - April 2025, Remote</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org">Indian Institute of Science Education and Research (IISER) Kolkata</span>
+            <span class="timeline-role">Research Intern</span>
+            <span class="timeline-sup">Supervisor: <a href="https://sites.google.com/view/kripabandhughosh-homepage/home" target="_blank" rel="noopener noreferrer">Prof. Kripabandhu Ghosh</a></span>
+            <span class="timeline-meta">Oct 2023 - Oct 2024, Remote</span>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-org">Indian Institute of Technology (IIT) Guwahati</span>
+            <span class="timeline-role">Summer Research Intern</span>
+            <span class="timeline-sup">Supervisor: <a href="https://debanga.github.io/" target="_blank" rel="noopener noreferrer">Prof. Debanga Raj Neog</a></span>
+            <span class="timeline-meta">May 2024 - July 2024, Guwahati, India</span>
+          </li>
+        </ul>
+        <p>Please check out my <a href="https://drive.google.com/file/d/18KkK9YJxZsbWLtgd_KGbuFh2XoGhiRFG/view" target="_blank" rel="noopener noreferrer">CV</a> for more details about the work I have done at each of these places.</p>
+      </section>
 
+      <section id="services" aria-labelledby="services-heading">
+        <h2 id="services-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 13 10" shape-rendering="crispEdges" focusable="false"><path fill="#3f86c2" d="M3 5h7v1h-7zM3 6h7v1h-7zM3 7h7v1h-7zM3 8h7v1h-7zM4 9h5v1h-5z"/><path fill="#2f6fae" d="M3 7h7v1h-7zM3 8h7v1h-7zM4 9h5v1h-5z"/><path fill="#203c57" d="M6 0h1v1h-1zM4 1h5v1h-5zM2 2h9v1h-9zM0 3h13v1h-13zM2 4h9v1h-9zM4 5h5v1h-5zM6 6h1v1h-1z"/><path fill="#4a6d94" d="M5 2h3v1h-3zM5 1h1v1h-1z"/><path fill="#f7c948" d="M12 3h1v1h-1zM12 4h1v1h-1zM12 5h1v1h-1zM12 6h1v1h-1zM11 7h2v1h-2zM11 8h2v1h-2z"/></svg></span> Services</h2>
+        <ul class="detail-list">
+          <li><strong>Program Committee Member</strong> for AAAI, 2026 and 2027.</li>
+          <li><strong>Reviewer</strong> for ICLR 2027, the ICML 2026 Pluralistic Alignment Workshop, IEEE Transactions on Artificial Intelligence (2025), and Elsevier Pattern Recognition Letters (2025).</li>
+          <li><strong>Volunteer</strong> at ICML (2026), EACL (2026), and EMNLP (2025).</li>
+          <li><strong>Teaching Assistant</strong> for Software Engineering (CS3230), Manipal University Jaipur, 2025.</li>
+        </ul>
+      </section>
 
-</section>
+      <section id="miscellaneous" aria-labelledby="miscellaneous-heading">
+        <h2 id="miscellaneous-heading"><span class="section-emoji" aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 11 9" shape-rendering="crispEdges" focusable="false"><path fill="#e8432a" d="M1 0h3v1h-3zM7 0h3v1h-3zM0 1h5v1h-5zM6 1h5v1h-5zM0 2h11v1h-11zM0 3h11v1h-11zM1 4h9v1h-9zM2 5h7v1h-7zM3 6h5v1h-5zM4 7h3v1h-3zM5 8h1v1h-1z"/><path fill="#c92f1a" d="M1 4h9v1h-9zM2 5h7v1h-7zM3 6h5v1h-5zM4 7h3v1h-3zM5 8h1v1h-1z"/><path fill="#ff9d8f" d="M1 1h2v1h-2zM1 2h1v1h-1z"/></svg></span> Miscellaneous</h2>
+        <h3 class="interest-heading"><span aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 9 10" shape-rendering="crispEdges" focusable="false"><path fill="#7c4dcc" d="M3 0h6v1h-6zM3 1h6v1h-6zM3 2h1v1h-1zM3 3h1v1h-1zM3 4h1v1h-1zM3 5h1v1h-1zM3 6h1v1h-1zM3 7h1v1h-1zM3 8h1v1h-1zM8 2h1v1h-1zM8 3h1v1h-1zM8 4h1v1h-1zM8 5h1v1h-1zM8 6h1v1h-1zM8 7h1v1h-1zM8 8h1v1h-1z"/><path fill="#7c4dcc" d="M1 6h3v1h-3zM0 7h4v1h-4zM0 8h4v1h-4zM1 9h3v1h-3zM6 6h3v1h-3zM5 7h4v1h-4zM5 8h4v1h-4zM6 9h3v1h-3z"/></svg></span> Music</h3>
+        <p>It is a big part of who I am! I love composing and producing original songs, with over <strong>6</strong> releases that have collectively gained over <strong>2 million</strong> streams worldwide across platforms. Feel free to listen on <a href="https://open.spotify.com/artist/0y1YkkoW5JitFA9Mc2UTqk?si=_RG0j0TzQICR4j60gqqsVA" target="_blank" rel="noopener noreferrer">Spotify</a> and <a href="https://www.youtube.com/@AbhilekhBorahYT" target="_blank" rel="noopener noreferrer">YouTube</a>.</p>
+        <p>I also play a variety of instruments, such as the piano, guitar, and ukulele, and have a deep appreciation for diverse genres such as rock, country, indie/synth pop, folk, and electronic music. Some of my favorite artists include Jeremy Zucker, Passenger, Kygo, The 1975, John Denver, Creedence Clearwater Revival, and John Mayer. You can check out my playlists <a href="https://open.spotify.com/user/cix9je49otysln5jpl9w5jvmg?si=3610527e675f4de1" target="_blank" rel="noopener noreferrer">here</a>.</p>
+        <h3 class="interest-heading"><span aria-hidden="true"><svg class="pixel-icon" viewBox="0 0 13 11" shape-rendering="crispEdges" focusable="false"><path fill="#203c57" d="M4 0h5v1h-5zM1 1h11v1h-11zM0 2h13v1h-13zM0 3h13v1h-13zM0 4h13v1h-13zM0 5h13v1h-13zM0 6h13v1h-13zM0 7h13v1h-13zM0 8h13v1h-13zM0 9h13v1h-13zM1 10h11v1h-11z"/><path fill="#ffffff" d="M5 3h3v1h-3zM4 4h5v1h-5zM3 5h7v1h-7zM3 6h7v1h-7zM3 7h7v1h-7zM4 8h5v1h-5zM5 9h3v1h-3z"/><path fill="#3f86c2" d="M5 4h3v1h-3zM4 5h5v1h-5zM4 6h5v1h-5zM4 7h5v1h-5zM5 8h3v1h-3z"/><path fill="#9fd0f2" d="M5 5h1v1h-1zM6 5h1v1h-1z"/><path fill="#f7c948" d="M10 2h2v1h-2z"/></svg></span> Films &amp; Travel</h3>
+        <p>I'm an avid traveler who loves spontaneous plans, spending time outdoors, and exploring different countries and cultures. I'm also deeply into movies and TV shows, with a particular fondness for genres such as thriller, comedy, drama, and science fiction. Some of my favorite films include Zodiac, Inception, Déjà Vu, Passengers, Dead Poets Society, The Holdovers, and Beverly Hills Cop.</p>
+      </section>
 
-</main>
-
-<footer style="text-align: center; padding: 1.5rem 2rem; color: #7a8288; font-size: 0.9rem; border-top: 1px solid #ebebeb; margin-top: 2rem;">Last updated in April 2026.</footer>
-
+      <footer class="site-footer">&copy; 2026 Abhilekh Borah. Last updated in October 2026.</footer>
+    </main>
+  </div>
 </body>
 </html>

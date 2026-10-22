@@ -1,4 +1,28 @@
-# Website Redesign - Clean Minimal Style
+# Single-Page Portfolio
+
+The active portfolio is a single scrolling page. Its profile header follows
+the portrait, name, role, contact links, and illustration arrangement at
+https://liweijiang.github.io/, using the existing Pikachu animation. Publication
+rows and conference ribbons are inspired by https://aiden0526.github.io/.
+
+- `index.html` contains the profile, biography, news, all nine publications,
+   education, honors, and interests beyond research.
+- `assets/css/portfolio.css` controls the responsive layout, sticky navigation,
+  profile header, Adobe-red role, brand-colored icons, and conference ribbons.
+- The navigation uses section anchors rather than separate content pages.
+- `publications.html`, `about.html`, and `beyond-research.html` forward older
+   links to their corresponding sections. Their original content remains as a
+   fallback; edit the homepage when updating the portfolio.
+- Publication entries retain full authors, conference names, oral and award
+   distinctions, and paper, project, code, and dataset links.
+
+Open `index.html` directly for a local preview. GitHub Pages still builds the
+repository with Jekyll from the root of `master`; `_config.yml` remains active
+for publishing even though the homepage does not use a Jekyll layout.
+
+The notes below describe the previous multi-page redesign and are historical.
+
+## Previous Redesign Notes
 
 Your website has been successfully redesigned to match the clean, minimal aesthetic of the reference site (Lasha Ravichander's portfolio).
 
